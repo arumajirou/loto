@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter / Windows metadata
+.ipynb_checkpoints/
+*:Zone.Identifier
+
+# Reports / coverage (generated)
+.coverage
+**/tests_report/
+**/coverage_html/
+
+# Model artifacts / checkpoints (generated, huge)
+**/checkpoints/
+*.pth
+*.ckpt
+*.pt
+
+# Archives
+*.zip
+
+# Prevent accidentally committing nested git dirs
+.git/
