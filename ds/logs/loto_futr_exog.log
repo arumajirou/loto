@@ -1,0 +1,921 @@
+2025-12-15 07:45:36,945 - INFO - ============================================================
+2025-12-15 07:45:36,945 - INFO - 外生変数生成＆PostgreSQL格納 開始
+2025-12-15 07:45:36,945 - INFO - ============================================================
+2025-12-15 07:45:36,952 - INFO - 日付範囲: 1994-10-05 00:00:00 ～ 2035-12-12 00:00:00
+2025-12-15 07:45:36,952 - INFO - 総日数: 2150
+2025-12-15 07:45:36,952 - INFO - 初期データフレーム: (2150, 1)
+2025-12-15 07:45:36,952 - INFO - カレンダー特徴量生成中...
+2025-12-15 07:45:36,956 - INFO - カレンダー特徴量: 完了
+2025-12-15 07:45:36,956 - INFO - 周期的エンコーディング生成中...
+2025-12-15 07:45:36,957 - INFO - 周期的エンコーディング: 完了
+2025-12-15 07:45:36,957 - INFO - トレンド特徴量生成中...
+2025-12-15 07:45:36,958 - INFO - トレンド特徴量: 完了
+2025-12-15 07:45:36,958 - INFO - フーリエ特徴量生成中（k=1～5）...
+2025-12-15 07:45:36,960 - INFO - フーリエ特徴量: 完了（20変数）
+2025-12-15 07:45:36,960 - INFO - イベント特徴量生成中...
+2025-12-15 07:45:37,065 - INFO - イベント特徴量: 完了
+2025-12-15 07:45:37,065 - INFO - Bingo5特徴量生成中...
+2025-12-15 07:45:37,067 - INFO - Bingo5特徴量: 完了
+2025-12-15 07:45:37,067 - INFO - 周期変数生成中（freq2～freq100）...
+2025-12-15 07:45:37,073 - INFO - 周期変数: 完了（99変数）
+2025-12-15 07:45:37,073 - INFO - 最終データフレーム: (2150, 185)
+2025-12-15 07:45:37,073 - INFO - カラム数: 185
+2025-12-15 07:45:37,090 - INFO - PostgreSQL接続成功: user=loto_user db=loto_db host=127.0.0.1:5432
+2025-12-15 07:45:37,098 - INFO - テーブル作成: 完了
+2025-12-15 07:45:37,341 - INFO - 動的カラム追加: 完了（119カラム）
+2025-12-15 07:45:37,343 - INFO - 既存データ削除: 完了
+2025-12-15 07:45:39,960 - INFO - データ挿入: 完了（2150レコード）
+2025-12-15 07:45:39,961 - INFO - ============================================================
+2025-12-15 07:45:39,962 - INFO - データベース統計
+2025-12-15 07:45:39,962 - INFO - ============================================================
+2025-12-15 07:45:39,962 - INFO - 総レコード数: 2150
+2025-12-15 07:45:39,962 - INFO - 最小日付: 1994-10-05
+2025-12-15 07:45:39,962 - INFO - 最大日付: 2035-12-12
+2025-12-15 07:45:39,962 - INFO - 年数: 42
+2025-12-15 07:45:39,962 - INFO - ============================================================
+2025-12-15 07:45:39,964 - INFO - 
+サンプルデータ（最初の10行）:
+2025-12-15 07:45:39,965 - INFO - 
+           ds  year  month  day     month_sin  month_cos  trend_linear  is_holiday  nth_wednesday_of_month  freq2  freq3  freq10  freq52  freq100
+0  1994-10-05  1994     10    5 -8.660254e-01   0.500000             0           0                       1      1      1       1       1        1
+1  1994-10-12  1994     10   12 -8.660254e-01   0.500000             7           0                       2      2      2       2       2        2
+2  1994-10-19  1994     10   19 -8.660254e-01   0.500000            14           0                       3      1      3       3       3        3
+3  1994-10-26  1994     10   26 -8.660254e-01   0.500000            21           0                       4      2      1       4       4        4
+4  1994-11-02  1994     11    2 -5.000000e-01   0.866025            28           0                       1      1      2       5       5        5
+5  1994-11-09  1994     11    9 -5.000000e-01   0.866025            35           0                       2      2      3       6       6        6
+6  1994-11-16  1994     11   16 -5.000000e-01   0.866025            42           0                       3      1      1       7       7        7
+7  1994-11-23  1994     11   23 -5.000000e-01   0.866025            49           1                       4      2      2       8       8        8
+8  1994-11-30  1994     11   30 -5.000000e-01   0.866025            56           0                       5      1      3       9       9        9
+9  1994-12-07  1994     12    7 -2.449294e-16   1.000000            63           0                       1      2      1      10      10       10
+2025-12-15 07:45:39,965 - INFO - 
+============================================================
+2025-12-15 07:45:39,965 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2025-12-15 07:45:39,965 - INFO - ============================================================
+2025-12-16 20:05:38,694 - INFO - ============================================================
+2025-12-16 20:05:38,694 - INFO - 外生変数生成＆PostgreSQL格納 開始
+2025-12-16 20:05:38,694 - INFO - ============================================================
+2025-12-16 20:05:38,701 - INFO - 日付範囲: 1994-10-05 00:00:00 ～ 2035-12-12 00:00:00
+2025-12-16 20:05:38,701 - INFO - 総日数: 2150
+2025-12-16 20:05:38,702 - INFO - 初期データフレーム: (2150, 1)
+2025-12-16 20:05:38,702 - INFO - カレンダー特徴量生成中...
+2025-12-16 20:05:38,706 - INFO - カレンダー特徴量: 完了
+2025-12-16 20:05:38,706 - INFO - 周期的エンコーディング生成中...
+2025-12-16 20:05:38,707 - INFO - 周期的エンコーディング: 完了
+2025-12-16 20:05:38,707 - INFO - トレンド特徴量生成中...
+2025-12-16 20:05:38,708 - INFO - トレンド特徴量: 完了
+2025-12-16 20:05:38,708 - INFO - フーリエ特徴量生成中（k=1～5）...
+2025-12-16 20:05:38,709 - INFO - フーリエ特徴量: 完了（20変数）
+2025-12-16 20:05:38,710 - INFO - イベント特徴量生成中...
+2025-12-16 20:05:38,813 - INFO - イベント特徴量: 完了
+2025-12-16 20:05:38,813 - INFO - Bingo5特徴量生成中...
+2025-12-16 20:05:38,816 - INFO - Bingo5特徴量: 完了
+2025-12-16 20:05:38,816 - INFO - 周期変数生成中（freq2～freq100）...
+2025-12-16 20:05:38,821 - INFO - 周期変数: 完了（99変数）
+2025-12-16 20:05:38,822 - INFO - 最終データフレーム: (2150, 185)
+2025-12-16 20:05:38,822 - INFO - カラム数: 185
+2025-12-16 20:05:38,837 - INFO - PostgreSQL接続成功: user=loto_user db=loto_db host=127.0.0.1:5432
+2025-12-16 20:05:38,844 - INFO - テーブル作成: 完了
+2025-12-16 20:05:39,092 - INFO - 動的カラム追加: 完了（119カラム）
+2025-12-16 20:05:39,096 - INFO - 既存データ削除: 完了
+2025-12-16 20:05:42,217 - INFO - データ挿入: 完了（2150レコード）
+2025-12-16 20:05:42,219 - INFO - ============================================================
+2025-12-16 20:05:42,220 - INFO - データベース統計
+2025-12-16 20:05:42,220 - INFO - ============================================================
+2025-12-16 20:05:42,220 - INFO - 総レコード数: 2150
+2025-12-16 20:05:42,220 - INFO - 最小日付: 1994-10-05
+2025-12-16 20:05:42,220 - INFO - 最大日付: 2035-12-12
+2025-12-16 20:05:42,220 - INFO - 年数: 42
+2025-12-16 20:05:42,220 - INFO - ============================================================
+2025-12-16 20:05:42,224 - INFO - 
+サンプルデータ（最初の10行）:
+2025-12-16 20:05:42,225 - INFO - 
+           ds  year  month  day     month_sin  month_cos  trend_linear  is_holiday  nth_wednesday_of_month  freq2  freq3  freq10  freq52  freq100
+0  1994-10-05  1994     10    5 -8.660254e-01   0.500000             0           0                       1      1      1       1       1        1
+1  1994-10-12  1994     10   12 -8.660254e-01   0.500000             7           0                       2      2      2       2       2        2
+2  1994-10-19  1994     10   19 -8.660254e-01   0.500000            14           0                       3      1      3       3       3        3
+3  1994-10-26  1994     10   26 -8.660254e-01   0.500000            21           0                       4      2      1       4       4        4
+4  1994-11-02  1994     11    2 -5.000000e-01   0.866025            28           0                       1      1      2       5       5        5
+5  1994-11-09  1994     11    9 -5.000000e-01   0.866025            35           0                       2      2      3       6       6        6
+6  1994-11-16  1994     11   16 -5.000000e-01   0.866025            42           0                       3      1      1       7       7        7
+7  1994-11-23  1994     11   23 -5.000000e-01   0.866025            49           1                       4      2      2       8       8        8
+8  1994-11-30  1994     11   30 -5.000000e-01   0.866025            56           0                       5      1      3       9       9        9
+9  1994-12-07  1994     12    7 -2.449294e-16   1.000000            63           0                       1      2      1      10      10       10
+2025-12-16 20:05:42,225 - INFO - 
+============================================================
+2025-12-16 20:05:42,225 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2025-12-16 20:05:42,225 - INFO - ============================================================
+2025-12-16 20:43:34,808 - INFO - ============================================================
+2025-12-16 20:43:34,808 - INFO - 外生変数生成＆PostgreSQL格納 開始
+2025-12-16 20:43:34,808 - INFO - ============================================================
+2025-12-16 20:43:34,815 - INFO - 日付範囲: 1994-10-05 00:00:00 ～ 2035-12-12 00:00:00
+2025-12-16 20:43:34,816 - INFO - 総日数: 2150
+2025-12-16 20:43:34,816 - INFO - 初期データフレーム: (2150, 1)
+2025-12-16 20:43:34,816 - INFO - カレンダー特徴量生成中...
+2025-12-16 20:43:34,819 - INFO - カレンダー特徴量: 完了
+2025-12-16 20:43:34,819 - INFO - 周期的エンコーディング生成中...
+2025-12-16 20:43:34,821 - INFO - 周期的エンコーディング: 完了
+2025-12-16 20:43:34,821 - INFO - トレンド特徴量生成中...
+2025-12-16 20:43:34,822 - INFO - トレンド特徴量: 完了
+2025-12-16 20:43:34,822 - INFO - フーリエ特徴量生成中（k=1～5）...
+2025-12-16 20:43:34,823 - INFO - フーリエ特徴量: 完了（20変数）
+2025-12-16 20:43:34,823 - INFO - イベント特徴量生成中...
+2025-12-16 20:43:34,925 - INFO - イベント特徴量: 完了
+2025-12-16 20:43:34,925 - INFO - Bingo5特徴量生成中...
+2025-12-16 20:43:34,927 - INFO - Bingo5特徴量: 完了
+2025-12-16 20:43:34,927 - INFO - 周期変数生成中（freq2～freq100）...
+2025-12-16 20:43:34,933 - INFO - 周期変数: 完了（99変数）
+2025-12-16 20:43:34,935 - INFO - カラム名リネーム完了（futr_接頭辞付与）
+2025-12-16 20:43:34,935 - INFO - 最終データフレーム: (2150, 185)
+2025-12-16 20:43:34,935 - INFO - カラム数: 185
+2025-12-16 20:43:34,948 - INFO - PostgreSQL接続成功: user=loto_user db=loto_db host=127.0.0.1:5432
+2025-12-16 20:43:34,957 - ERROR - エラー発生: (psycopg2.errors.UndefinedColumn) column "futr_year" does not exist
+
+[SQL: 
+        CREATE TABLE IF NOT EXISTS public.loto_futr (
+            id SERIAL PRIMARY KEY,
+            ds DATE NOT NULL UNIQUE,
+            futr_year INTEGER,
+            futr_month INTEGER,
+            futr_day INTEGER,
+            futr_quarter INTEGER,
+            futr_week INTEGER,
+            futr_dayofweek INTEGER,
+            futr_dayofyear INTEGER,
+            futr_week_of_month INTEGER,
+            futr_is_month_start INTEGER,
+            futr_is_month_end INTEGER,
+            futr_is_quarter_start INTEGER,
+            futr_is_quarter_end INTEGER,
+            futr_is_year_start INTEGER,
+            futr_is_year_end INTEGER,
+            futr_is_weekend INTEGER,
+            futr_is_weekday INTEGER,
+            futr_is_leap_year INTEGER,
+            futr_days_in_month INTEGER,
+            futr_days_to_month_end INTEGER,
+            futr_days_since_month_start INTEGER,
+            futr_days_in_year INTEGER,
+            futr_days_to_year_end INTEGER,
+            futr_month_progress DOUBLE PRECISION,
+            futr_year_progress DOUBLE PRECISION,
+            futr_month_sin DOUBLE PRECISION,
+            futr_month_cos DOUBLE PRECISION,
+            futr_day_sin DOUBLE PRECISION,
+            futr_day_cos DOUBLE PRECISION,
+            futr_dayofweek_sin DOUBLE PRECISION,
+            futr_dayofweek_cos DOUBLE PRECISION,
+            futr_dayofyear_sin DOUBLE PRECISION,
+            futr_dayofyear_cos DOUBLE PRECISION,
+            futr_week_sin DOUBLE PRECISION,
+            futr_week_cos DOUBLE PRECISION,
+            futr_quarter_sin DOUBLE PRECISION,
+            futr_quarter_cos DOUBLE PRECISION,
+            futr_trend_linear INTEGER,
+            futr_trend_squared BIGINT,
+            futr_trend_cubic BIGINT,
+            futr_trend_log DOUBLE PRECISION,
+            futr_trend_sqrt DOUBLE PRECISION,
+            futr_trend_normalized DOUBLE PRECISION,
+            futr_is_holiday INTEGER,
+            futr_is_before_holiday INTEGER,
+            futr_is_after_holiday INTEGER,
+            futr_is_golden_week INTEGER,
+            futr_is_obon INTEGER,
+            futr_is_new_year_holiday INTEGER,
+            futr_is_silver_week INTEGER,
+            futr_is_payday_25th INTEGER,
+            futr_is_payday_month_end INTEGER,
+            futr_is_bonus_month INTEGER,
+            futr_is_fiscal_year_end INTEGER,
+            futr_is_fiscal_quarter_end INTEGER,
+            futr_fiscal_year_jp INTEGER,
+            futr_fiscal_quarter_jp INTEGER,
+            futr_fiscal_month_jp INTEGER,
+            futr_draw_number INTEGER,
+            futr_draw_index_log DOUBLE PRECISION,
+            futr_nth_wednesday_of_month INTEGER,
+            futr_is_last_wednesday_of_month INTEGER,
+            futr_is_first_draw_of_month INTEGER,
+            futr_is_last_draw_of_month INTEGER,
+            futr_draws_this_month INTEGER,
+            futr_is_year_first_draw INTEGER,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        
+        -- インデックス作成 (dsに一意インデックスを念のため追加)
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_loto_futr_ds_unique ON public.loto_futr(ds);
+        CREATE INDEX IF NOT EXISTS idx_loto_futr_year_month ON public.loto_futr(futr_year, futr_month);
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedColumn: column "futr_year" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/e/env/ts/tslib/ds/src/create_loto_futr_exog.py", line 437, in main
+    conn.execute(text(create_table_sql))
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1419, in execute
+    return meth(
+           ^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedColumn) column "futr_year" does not exist
+
+[SQL: 
+        CREATE TABLE IF NOT EXISTS public.loto_futr (
+            id SERIAL PRIMARY KEY,
+            ds DATE NOT NULL UNIQUE,
+            futr_year INTEGER,
+            futr_month INTEGER,
+            futr_day INTEGER,
+            futr_quarter INTEGER,
+            futr_week INTEGER,
+            futr_dayofweek INTEGER,
+            futr_dayofyear INTEGER,
+            futr_week_of_month INTEGER,
+            futr_is_month_start INTEGER,
+            futr_is_month_end INTEGER,
+            futr_is_quarter_start INTEGER,
+            futr_is_quarter_end INTEGER,
+            futr_is_year_start INTEGER,
+            futr_is_year_end INTEGER,
+            futr_is_weekend INTEGER,
+            futr_is_weekday INTEGER,
+            futr_is_leap_year INTEGER,
+            futr_days_in_month INTEGER,
+            futr_days_to_month_end INTEGER,
+            futr_days_since_month_start INTEGER,
+            futr_days_in_year INTEGER,
+            futr_days_to_year_end INTEGER,
+            futr_month_progress DOUBLE PRECISION,
+            futr_year_progress DOUBLE PRECISION,
+            futr_month_sin DOUBLE PRECISION,
+            futr_month_cos DOUBLE PRECISION,
+            futr_day_sin DOUBLE PRECISION,
+            futr_day_cos DOUBLE PRECISION,
+            futr_dayofweek_sin DOUBLE PRECISION,
+            futr_dayofweek_cos DOUBLE PRECISION,
+            futr_dayofyear_sin DOUBLE PRECISION,
+            futr_dayofyear_cos DOUBLE PRECISION,
+            futr_week_sin DOUBLE PRECISION,
+            futr_week_cos DOUBLE PRECISION,
+            futr_quarter_sin DOUBLE PRECISION,
+            futr_quarter_cos DOUBLE PRECISION,
+            futr_trend_linear INTEGER,
+            futr_trend_squared BIGINT,
+            futr_trend_cubic BIGINT,
+            futr_trend_log DOUBLE PRECISION,
+            futr_trend_sqrt DOUBLE PRECISION,
+            futr_trend_normalized DOUBLE PRECISION,
+            futr_is_holiday INTEGER,
+            futr_is_before_holiday INTEGER,
+            futr_is_after_holiday INTEGER,
+            futr_is_golden_week INTEGER,
+            futr_is_obon INTEGER,
+            futr_is_new_year_holiday INTEGER,
+            futr_is_silver_week INTEGER,
+            futr_is_payday_25th INTEGER,
+            futr_is_payday_month_end INTEGER,
+            futr_is_bonus_month INTEGER,
+            futr_is_fiscal_year_end INTEGER,
+            futr_is_fiscal_quarter_end INTEGER,
+            futr_fiscal_year_jp INTEGER,
+            futr_fiscal_quarter_jp INTEGER,
+            futr_fiscal_month_jp INTEGER,
+            futr_draw_number INTEGER,
+            futr_draw_index_log DOUBLE PRECISION,
+            futr_nth_wednesday_of_month INTEGER,
+            futr_is_last_wednesday_of_month INTEGER,
+            futr_is_first_draw_of_month INTEGER,
+            futr_is_last_draw_of_month INTEGER,
+            futr_draws_this_month INTEGER,
+            futr_is_year_first_draw INTEGER,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        
+        -- インデックス作成 (dsに一意インデックスを念のため追加)
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_loto_futr_ds_unique ON public.loto_futr(ds);
+        CREATE INDEX IF NOT EXISTS idx_loto_futr_year_month ON public.loto_futr(futr_year, futr_month);
+        ]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-12-16 20:45:17,515 - INFO - ============================================================
+2025-12-16 20:45:17,515 - INFO - 外生変数生成＆PostgreSQL格納 開始
+2025-12-16 20:45:17,515 - INFO - ============================================================
+2025-12-16 20:45:17,523 - INFO - 日付範囲: 1994-10-05 00:00:00 ～ 2035-12-12 00:00:00
+2025-12-16 20:45:17,523 - INFO - 総日数: 2150
+2025-12-16 20:45:17,523 - INFO - 初期データフレーム: (2150, 1)
+2025-12-16 20:45:17,523 - INFO - カレンダー特徴量生成中...
+2025-12-16 20:45:17,527 - INFO - カレンダー特徴量: 完了
+2025-12-16 20:45:17,527 - INFO - 周期的エンコーディング生成中...
+2025-12-16 20:45:17,528 - INFO - 周期的エンコーディング: 完了
+2025-12-16 20:45:17,528 - INFO - トレンド特徴量生成中...
+2025-12-16 20:45:17,529 - INFO - トレンド特徴量: 完了
+2025-12-16 20:45:17,529 - INFO - フーリエ特徴量生成中（k=1～5）...
+2025-12-16 20:45:17,531 - INFO - フーリエ特徴量: 完了（20変数）
+2025-12-16 20:45:17,531 - INFO - イベント特徴量生成中...
+2025-12-16 20:45:17,635 - INFO - イベント特徴量: 完了
+2025-12-16 20:45:17,635 - INFO - Bingo5特徴量生成中...
+2025-12-16 20:45:17,637 - INFO - Bingo5特徴量: 完了
+2025-12-16 20:45:17,637 - INFO - 周期変数生成中（freq2～freq100）...
+2025-12-16 20:45:17,642 - INFO - 周期変数: 完了（99変数）
+2025-12-16 20:45:17,645 - INFO - カラム名リネーム完了（futr_接頭辞付与）
+2025-12-16 20:45:17,645 - INFO - 最終データフレーム: (2150, 185)
+2025-12-16 20:45:17,645 - INFO - カラム数: 185
+2025-12-16 20:45:17,659 - INFO - PostgreSQL接続成功: user=loto_user db=loto_db host=127.0.0.1:5432
+2025-12-16 20:45:17,679 - INFO - テーブル再作成（DROP & CREATE）: 完了
+2025-12-16 20:45:17,918 - INFO - 動的カラム追加: 完了（119カラム）
+2025-12-16 20:45:20,648 - INFO - データ挿入: 完了（2150レコード）
+2025-12-16 20:45:20,649 - INFO - ============================================================
+2025-12-16 20:45:20,649 - INFO - データベース統計
+2025-12-16 20:45:20,649 - INFO - ============================================================
+2025-12-16 20:45:20,649 - INFO - 総レコード数: 2150
+2025-12-16 20:45:20,650 - INFO - 最小日付: 1994-10-05
+2025-12-16 20:45:20,650 - INFO - 最大日付: 2035-12-12
+2025-12-16 20:45:20,650 - INFO - 年数: 42
+2025-12-16 20:45:20,650 - INFO - ============================================================
+2025-12-16 20:45:20,652 - INFO - 
+サンプルデータ（最初の10行）:
+2025-12-16 20:45:20,653 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2025-12-16 20:45:20,653 - INFO - 
+============================================================
+2025-12-16 20:45:20,653 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2025-12-16 20:45:20,653 - INFO - ============================================================
+2025-12-16 23:42:25,664 - INFO - ============================================================
+2025-12-16 23:42:25,664 - INFO - 外生変数生成＆PostgreSQL格納 開始
+2025-12-16 23:42:25,664 - INFO - ============================================================
+2025-12-16 23:42:25,671 - INFO - 日付範囲: 1994-10-05 00:00:00 ～ 2035-12-12 00:00:00
+2025-12-16 23:42:25,671 - INFO - 総日数: 2150
+2025-12-16 23:42:25,672 - INFO - 初期データフレーム: (2150, 1)
+2025-12-16 23:42:25,672 - INFO - カレンダー特徴量生成中...
+2025-12-16 23:42:25,675 - INFO - カレンダー特徴量: 完了
+2025-12-16 23:42:25,675 - INFO - 周期的エンコーディング生成中...
+2025-12-16 23:42:25,677 - INFO - 周期的エンコーディング: 完了
+2025-12-16 23:42:25,677 - INFO - トレンド特徴量生成中...
+2025-12-16 23:42:25,677 - INFO - トレンド特徴量: 完了
+2025-12-16 23:42:25,677 - INFO - フーリエ特徴量生成中（k=1～5）...
+2025-12-16 23:42:25,679 - INFO - フーリエ特徴量: 完了（20変数）
+2025-12-16 23:42:25,679 - INFO - イベント特徴量生成中...
+2025-12-16 23:42:25,782 - INFO - イベント特徴量: 完了
+2025-12-16 23:42:25,782 - INFO - Bingo5特徴量生成中...
+2025-12-16 23:42:25,784 - INFO - Bingo5特徴量: 完了
+2025-12-16 23:42:25,784 - INFO - 周期変数生成中（freq2～freq100）...
+2025-12-16 23:42:25,790 - INFO - 周期変数: 完了（99変数）
+2025-12-16 23:42:25,792 - INFO - カラム名リネーム完了（futr_接頭辞付与）
+2025-12-16 23:42:25,792 - INFO - 最終データフレーム: (2150, 185)
+2025-12-16 23:42:25,792 - INFO - カラム数: 185
+2025-12-16 23:42:25,807 - INFO - PostgreSQL接続成功: user=loto_user db=loto_db host=127.0.0.1:5432
+2025-12-16 23:42:25,815 - ERROR - エラー発生: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "loto_user"
+password retrieved from file "/home/az/.pgpass"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "loto_user"
+password retrieved from file "/home/az/.pgpass"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 711, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 175, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 673, in __init__
+    self.__connect()
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "loto_user"
+password retrieved from file "/home/az/.pgpass"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "loto_user"
+password retrieved from file "/home/az/.pgpass"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/e/env/ts/tslib/ds/src/exog/create_loto_futr_exog.py", line 440, in main
+    with engine.connect() as conn:
+         ^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3285, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2448, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 143, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 3309, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 447, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 711, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 177, in _do_get
+    with util.safe_reraise():
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/impl.py", line 175, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 388, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 673, in __init__
+    self.__connect()
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 899, in __connect
+    with util.safe_reraise():
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/pool/base.py", line 895, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/create.py", line 661, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 630, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/az/miniconda3/envs/nc/lib/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "loto_user"
+password retrieved from file "/home/az/.pgpass"
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "loto_user"
+password retrieved from file "/home/az/.pgpass"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-12-16 23:46:48,383 - INFO - ============================================================
+2025-12-16 23:46:48,383 - INFO - 外生変数生成＆PostgreSQL格納 開始
+2025-12-16 23:46:48,383 - INFO - ============================================================
+2025-12-16 23:46:48,390 - INFO - 日付範囲: 1994-10-05 00:00:00 ～ 2035-12-12 00:00:00
+2025-12-16 23:46:48,390 - INFO - 総日数: 2150
+2025-12-16 23:46:48,390 - INFO - 初期データフレーム: (2150, 1)
+2025-12-16 23:46:48,390 - INFO - カレンダー特徴量生成中...
+2025-12-16 23:46:48,394 - INFO - カレンダー特徴量: 完了
+2025-12-16 23:46:48,394 - INFO - 周期的エンコーディング生成中...
+2025-12-16 23:46:48,396 - INFO - 周期的エンコーディング: 完了
+2025-12-16 23:46:48,396 - INFO - トレンド特徴量生成中...
+2025-12-16 23:46:48,397 - INFO - トレンド特徴量: 完了
+2025-12-16 23:46:48,397 - INFO - フーリエ特徴量生成中（k=1～5）...
+2025-12-16 23:46:48,399 - INFO - フーリエ特徴量: 完了（20変数）
+2025-12-16 23:46:48,399 - INFO - イベント特徴量生成中...
+2025-12-16 23:46:48,501 - INFO - イベント特徴量: 完了
+2025-12-16 23:46:48,501 - INFO - Bingo5特徴量生成中...
+2025-12-16 23:46:48,503 - INFO - Bingo5特徴量: 完了
+2025-12-16 23:46:48,503 - INFO - 周期変数生成中（freq2～freq100）...
+2025-12-16 23:46:48,509 - INFO - 周期変数: 完了（99変数）
+2025-12-16 23:46:48,512 - INFO - カラム名リネーム完了（futr_接頭辞付与）
+2025-12-16 23:46:48,512 - INFO - 最終データフレーム: (2150, 185)
+2025-12-16 23:46:48,512 - INFO - カラム数: 185
+2025-12-16 23:46:48,512 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2025-12-16 23:46:48,526 - INFO - PostgreSQL接続成功: user=postgres db=loto_db host=127.0.0.1:5432
+2025-12-16 23:46:48,545 - INFO - テーブル再作成（DROP & CREATE）: 完了
+2025-12-16 23:46:48,783 - INFO - 動的カラム追加: 完了（119カラム）
+2025-12-16 23:46:51,637 - INFO - データ挿入: 完了（2150レコード）
+2025-12-16 23:46:51,638 - INFO - ============================================================
+2025-12-16 23:46:51,638 - INFO - データベース統計
+2025-12-16 23:46:51,638 - INFO - ============================================================
+2025-12-16 23:46:51,638 - INFO - 総レコード数: 2150
+2025-12-16 23:46:51,638 - INFO - 最小日付: 1994-10-05
+2025-12-16 23:46:51,638 - INFO - 最大日付: 2035-12-12
+2025-12-16 23:46:51,638 - INFO - 年数: 42
+2025-12-16 23:46:51,638 - INFO - ============================================================
+2025-12-16 23:46:51,640 - INFO - 
+サンプルデータ（最初の10行）:
+2025-12-16 23:46:51,642 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2025-12-16 23:46:51,642 - INFO - 
+============================================================
+2025-12-16 23:46:51,642 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2025-12-16 23:46:51,642 - INFO - ============================================================
+2025-12-16 23:56:16,535 - INFO - ============================================================
+2025-12-16 23:56:16,535 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2025-12-16 23:56:16,535 - INFO - ============================================================
+2025-12-16 23:56:16,535 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2035-12-16, freq=W-WED
+2025-12-16 23:56:16,536 - INFO - 特徴量生成開始...
+2025-12-16 23:56:16,542 - INFO - 日付範囲生成: 2150レコード
+2025-12-16 23:56:16,662 - INFO - 特徴量生成完了。カラム数: 185
+2025-12-16 23:56:16,662 - INFO - 最終データフレーム: (2150, 185)
+2025-12-16 23:56:16,662 - INFO - カラム数: 185
+2025-12-16 23:56:16,662 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2025-12-16 23:56:16,677 - INFO - PostgreSQL接続成功: user=postgres db=loto_db host=127.0.0.1:5432
+2025-12-16 23:56:16,704 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2025-12-16 23:56:19,503 - INFO - データ挿入: 完了（2150レコード）
+2025-12-16 23:56:19,505 - INFO - ============================================================
+2025-12-16 23:56:19,505 - INFO - データベース統計
+2025-12-16 23:56:19,505 - INFO - ============================================================
+2025-12-16 23:56:19,505 - INFO - 総レコード数: 2150
+2025-12-16 23:56:19,505 - INFO - 最小日付: 1994-10-05
+2025-12-16 23:56:19,505 - INFO - 最大日付: 2035-12-12
+2025-12-16 23:56:19,505 - INFO - 年数: 42
+2025-12-16 23:56:19,505 - INFO - ============================================================
+2025-12-16 23:56:19,508 - INFO - 
+サンプルデータ（最初の10行）:
+2025-12-16 23:56:19,510 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2025-12-16 23:56:19,510 - INFO - 
+============================================================
+2025-12-16 23:56:19,510 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2025-12-16 23:56:19,510 - INFO - ============================================================
+2025-12-16 23:58:57,214 - INFO - ============================================================
+2025-12-16 23:58:57,214 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2025-12-16 23:58:57,214 - INFO - ============================================================
+2025-12-16 23:58:57,214 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2035-12-16, freq=W-WED
+2025-12-16 23:58:57,214 - INFO - 特徴量生成開始...
+2025-12-16 23:58:57,221 - INFO - 日付範囲生成: 2150レコード
+2025-12-16 23:58:57,343 - INFO - 特徴量生成完了。カラム数: 185
+2025-12-16 23:58:57,343 - INFO - 最終データフレーム: (2150, 185)
+2025-12-16 23:58:57,343 - INFO - カラム数: 185
+2025-12-16 23:58:57,343 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2025-12-16 23:58:57,357 - INFO - PostgreSQL接続成功: user=postgres db=loto_db host=127.0.0.1:5432
+2025-12-16 23:58:57,384 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2025-12-16 23:59:00,321 - INFO - データ挿入: 完了（2150レコード）
+2025-12-16 23:59:00,323 - INFO - ============================================================
+2025-12-16 23:59:00,323 - INFO - データベース統計
+2025-12-16 23:59:00,323 - INFO - ============================================================
+2025-12-16 23:59:00,323 - INFO - 総レコード数: 2150
+2025-12-16 23:59:00,323 - INFO - 最小日付: 1994-10-05
+2025-12-16 23:59:00,323 - INFO - 最大日付: 2035-12-12
+2025-12-16 23:59:00,323 - INFO - 年数: 42
+2025-12-16 23:59:00,323 - INFO - ============================================================
+2025-12-16 23:59:00,326 - INFO - 
+サンプルデータ（最初の10行）:
+2025-12-16 23:59:00,327 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2025-12-16 23:59:00,327 - INFO - 
+============================================================
+2025-12-16 23:59:00,327 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2025-12-16 23:59:00,327 - INFO - ============================================================
+2026-01-05 20:29:05,759 - INFO - ============================================================
+2026-01-05 20:29:05,759 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2026-01-05 20:29:05,759 - INFO - ============================================================
+2026-01-05 20:29:05,760 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2036-01-05, freq=W-WED
+2026-01-05 20:29:05,760 - INFO - 特徴量生成開始...
+2026-01-05 20:29:05,767 - INFO - 日付範囲生成: 2153レコード
+2026-01-05 20:29:05,895 - INFO - 特徴量生成完了。カラム数: 185
+2026-01-05 20:29:05,895 - INFO - 最終データフレーム: (2153, 185)
+2026-01-05 20:29:05,895 - INFO - カラム数: 185
+2026-01-05 20:29:05,895 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2026-01-05 20:29:05,909 - INFO - PostgreSQL接続成功: user=postgres db=loto_db host=127.0.0.1:5432
+2026-01-05 20:29:05,930 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2026-01-05 20:29:08,739 - INFO - データ挿入: 完了（2153レコード）
+2026-01-05 20:29:08,740 - INFO - ============================================================
+2026-01-05 20:29:08,740 - INFO - データベース統計
+2026-01-05 20:29:08,740 - INFO - ============================================================
+2026-01-05 20:29:08,740 - INFO - 総レコード数: 2153
+2026-01-05 20:29:08,740 - INFO - 最小日付: 1994-10-05
+2026-01-05 20:29:08,741 - INFO - 最大日付: 2036-01-02
+2026-01-05 20:29:08,741 - INFO - 年数: 43
+2026-01-05 20:29:08,741 - INFO - ============================================================
+2026-01-05 20:29:08,743 - INFO - 
+サンプルデータ（最初の10行）:
+2026-01-05 20:29:08,745 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2026-01-05 20:29:08,745 - INFO - 
+============================================================
+2026-01-05 20:29:08,745 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2026-01-05 20:29:08,745 - INFO - ============================================================
+2026-01-06 07:32:22,188 - INFO - ============================================================
+2026-01-06 07:32:22,188 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2026-01-06 07:32:22,188 - INFO - ============================================================
+2026-01-06 07:32:22,188 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2036-01-06, freq=W-WED
+2026-01-06 07:32:22,188 - INFO - 特徴量生成開始...
+2026-01-06 07:32:22,195 - INFO - 日付範囲生成: 2153レコード
+2026-01-06 07:32:22,315 - INFO - 特徴量生成完了。カラム数: 185
+2026-01-06 07:32:22,315 - INFO - 最終データフレーム: (2153, 185)
+2026-01-06 07:32:22,315 - INFO - カラム数: 185
+2026-01-06 07:32:22,315 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2026-01-06 07:32:22,330 - INFO - PostgreSQL接続成功: user=postgres db=loto_db host=127.0.0.1:5432
+2026-01-06 07:32:22,373 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2026-01-06 07:32:25,035 - INFO - データ挿入: 完了（2153レコード）
+2026-01-06 07:32:25,037 - INFO - ============================================================
+2026-01-06 07:32:25,037 - INFO - データベース統計
+2026-01-06 07:32:25,037 - INFO - ============================================================
+2026-01-06 07:32:25,037 - INFO - 総レコード数: 2153
+2026-01-06 07:32:25,037 - INFO - 最小日付: 1994-10-05
+2026-01-06 07:32:25,037 - INFO - 最大日付: 2036-01-02
+2026-01-06 07:32:25,037 - INFO - 年数: 43
+2026-01-06 07:32:25,037 - INFO - ============================================================
+2026-01-06 07:32:25,039 - INFO - 
+サンプルデータ（最初の10行）:
+2026-01-06 07:32:25,040 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2026-01-06 07:32:25,040 - INFO - 
+============================================================
+2026-01-06 07:32:25,040 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2026-01-06 07:32:25,040 - INFO - ============================================================
+2026-01-09 20:04:31,441 - INFO - ============================================================
+2026-01-09 20:04:31,441 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2026-01-09 20:04:31,441 - INFO - ============================================================
+2026-01-09 20:04:31,443 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2036-01-09, freq=W-WED
+2026-01-09 20:04:31,443 - INFO - 特徴量生成開始...
+2026-01-09 20:04:31,451 - INFO - 日付範囲生成: 2154レコード
+2026-01-09 20:04:31,599 - INFO - 特徴量生成完了。カラム数: 185
+2026-01-09 20:04:31,599 - INFO - 最終データフレーム: (2154, 185)
+2026-01-09 20:04:31,599 - INFO - カラム数: 185
+2026-01-09 20:04:31,599 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2026-01-09 20:04:31,624 - INFO - PostgreSQL接続成功: user=postgres db=loto_db host=127.0.0.1:5432
+2026-01-09 20:04:31,684 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2026-01-09 20:04:34,488 - INFO - データ挿入: 完了（2154レコード）
+2026-01-09 20:04:34,490 - INFO - ============================================================
+2026-01-09 20:04:34,490 - INFO - データベース統計
+2026-01-09 20:04:34,490 - INFO - ============================================================
+2026-01-09 20:04:34,490 - INFO - 総レコード数: 2154
+2026-01-09 20:04:34,490 - INFO - 最小日付: 1994-10-05
+2026-01-09 20:04:34,490 - INFO - 最大日付: 2036-01-09
+2026-01-09 20:04:34,490 - INFO - 年数: 43
+2026-01-09 20:04:34,490 - INFO - ============================================================
+2026-01-09 20:04:34,493 - INFO - 
+サンプルデータ（最初の10行）:
+2026-01-09 20:04:34,495 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2026-01-09 20:04:34,495 - INFO - 
+============================================================
+2026-01-09 20:04:34,495 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2026-01-09 20:04:34,495 - INFO - ============================================================
+2026-01-09 20:07:39,400 - INFO - ============================================================
+2026-01-09 20:07:39,400 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2026-01-09 20:07:39,400 - INFO - ============================================================
+2026-01-09 20:07:39,402 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2036-01-09, freq=W-WED
+2026-01-09 20:07:39,402 - INFO - 特徴量生成開始...
+2026-01-09 20:07:39,410 - INFO - 日付範囲生成: 2154レコード
+2026-01-09 20:07:39,554 - INFO - 特徴量生成完了。カラム数: 185
+2026-01-09 20:07:39,554 - INFO - 最終データフレーム: (2154, 185)
+2026-01-09 20:07:39,554 - INFO - カラム数: 185
+2026-01-09 20:07:39,554 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2026-01-09 20:07:39,568 - INFO - PostgreSQL接続成功: user=postgres db=loto_db host=127.0.0.1:5432
+2026-01-09 20:07:39,622 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2026-01-09 20:07:42,226 - INFO - データ挿入: 完了（2154レコード）
+2026-01-09 20:07:42,228 - INFO - ============================================================
+2026-01-09 20:07:42,228 - INFO - データベース統計
+2026-01-09 20:07:42,228 - INFO - ============================================================
+2026-01-09 20:07:42,228 - INFO - 総レコード数: 2154
+2026-01-09 20:07:42,228 - INFO - 最小日付: 1994-10-05
+2026-01-09 20:07:42,228 - INFO - 最大日付: 2036-01-09
+2026-01-09 20:07:42,228 - INFO - 年数: 43
+2026-01-09 20:07:42,228 - INFO - ============================================================
+2026-01-09 20:07:42,231 - INFO - 
+サンプルデータ（最初の10行）:
+2026-01-09 20:07:42,233 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2026-01-09 20:07:42,233 - INFO - 
+============================================================
+2026-01-09 20:07:42,233 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2026-01-09 20:07:42,234 - INFO - ============================================================
+2026-01-11 07:16:11,308 - INFO - ============================================================
+2026-01-11 07:16:11,309 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2026-01-11 07:16:11,309 - INFO - ============================================================
+2026-01-11 07:16:11,311 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2036-01-11, freq=W-WED
+2026-01-11 07:16:11,311 - INFO - 特徴量生成開始...
+2026-01-11 07:16:11,322 - INFO - 日付範囲生成: 2154レコード
+2026-01-11 07:16:11,475 - INFO - 特徴量生成完了。カラム数: 185
+2026-01-11 07:16:11,475 - INFO - 最終データフレーム: (2154, 185)
+2026-01-11 07:16:11,475 - INFO - カラム数: 185
+2026-01-11 07:16:11,475 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2026-01-11 07:16:11,500 - INFO - PostgreSQL接続成功: user=postgres db=dataset host=127.0.0.1:5432
+2026-01-11 07:16:11,558 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2026-01-11 07:16:14,374 - INFO - データ挿入: 完了（2154レコード）
+2026-01-11 07:16:14,376 - INFO - ============================================================
+2026-01-11 07:16:14,376 - INFO - データベース統計
+2026-01-11 07:16:14,376 - INFO - ============================================================
+2026-01-11 07:16:14,376 - INFO - 総レコード数: 2154
+2026-01-11 07:16:14,376 - INFO - 最小日付: 1994-10-05
+2026-01-11 07:16:14,376 - INFO - 最大日付: 2036-01-09
+2026-01-11 07:16:14,377 - INFO - 年数: 43
+2026-01-11 07:16:14,377 - INFO - ============================================================
+2026-01-11 07:16:14,380 - INFO - 
+サンプルデータ（最初の10行）:
+2026-01-11 07:16:14,382 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2026-01-11 07:16:14,382 - INFO - 
+============================================================
+2026-01-11 07:16:14,382 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2026-01-11 07:16:14,382 - INFO - ============================================================
+2026-01-11 08:11:16,555 - INFO - ============================================================
+2026-01-11 08:11:16,555 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2026-01-11 08:11:16,555 - INFO - ============================================================
+2026-01-11 08:11:16,557 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2036-01-11, freq=W-WED
+2026-01-11 08:11:16,557 - INFO - 特徴量生成開始...
+2026-01-11 08:11:16,569 - INFO - 日付範囲生成: 2154レコード
+2026-01-11 08:11:16,723 - INFO - 特徴量生成完了。カラム数: 185
+2026-01-11 08:11:16,723 - INFO - 最終データフレーム: (2154, 185)
+2026-01-11 08:11:16,723 - INFO - カラム数: 185
+2026-01-11 08:11:16,723 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2026-01-11 08:11:16,738 - INFO - PostgreSQL接続成功: user=postgres db=dataset host=127.0.0.1:5432
+2026-01-11 08:11:16,799 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2026-01-11 08:11:19,591 - INFO - データ挿入: 完了（2154レコード）
+2026-01-11 08:11:19,594 - INFO - ============================================================
+2026-01-11 08:11:19,594 - INFO - データベース統計
+2026-01-11 08:11:19,594 - INFO - ============================================================
+2026-01-11 08:11:19,595 - INFO - 総レコード数: 2154
+2026-01-11 08:11:19,595 - INFO - 最小日付: 1994-10-05
+2026-01-11 08:11:19,595 - INFO - 最大日付: 2036-01-09
+2026-01-11 08:11:19,595 - INFO - 年数: 43
+2026-01-11 08:11:19,595 - INFO - ============================================================
+2026-01-11 08:11:19,598 - INFO - 
+サンプルデータ（最初の10行）:
+2026-01-11 08:11:19,600 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2026-01-11 08:11:19,600 - INFO - 
+============================================================
+2026-01-11 08:11:19,600 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2026-01-11 08:11:19,600 - INFO - ============================================================
+2026-01-11 08:31:03,224 - INFO - ============================================================
+2026-01-11 08:31:03,224 - INFO - 外生変数生成＆PostgreSQL格納 開始 (v2.0.0)
+2026-01-11 08:31:03,224 - INFO - ============================================================
+2026-01-11 08:31:03,224 - INFO - ジェネレーター初期化: 1994-10-01 ～ 2036-01-11, freq=W-WED
+2026-01-11 08:31:03,224 - INFO - 特徴量生成開始...
+2026-01-11 08:31:03,234 - INFO - 日付範囲生成: 2154レコード
+2026-01-11 08:31:03,375 - INFO - 特徴量生成完了。カラム数: 185
+2026-01-11 08:31:03,375 - INFO - 最終データフレーム: (2154, 185)
+2026-01-11 08:31:03,375 - INFO - カラム数: 185
+2026-01-11 08:31:03,375 - INFO - PostgreSQL接続: パスワードを接続文字列に含めました。
+2026-01-11 08:31:03,389 - INFO - PostgreSQL接続成功: user=postgres db=dataset host=127.0.0.1:5432
+2026-01-11 08:31:03,444 - INFO - テーブル再作成（DROP & CREATE）と動的カラム追加: 完了 (119カラム追加)
+2026-01-11 08:31:06,127 - INFO - データ挿入: 完了（2154レコード）
+2026-01-11 08:31:06,129 - INFO - ============================================================
+2026-01-11 08:31:06,129 - INFO - データベース統計
+2026-01-11 08:31:06,129 - INFO - ============================================================
+2026-01-11 08:31:06,129 - INFO - 総レコード数: 2154
+2026-01-11 08:31:06,129 - INFO - 最小日付: 1994-10-05
+2026-01-11 08:31:06,129 - INFO - 最大日付: 2036-01-09
+2026-01-11 08:31:06,129 - INFO - 年数: 43
+2026-01-11 08:31:06,129 - INFO - ============================================================
+2026-01-11 08:31:06,132 - INFO - 
+サンプルデータ（最初の10行）:
+2026-01-11 08:31:06,134 - INFO - 
+           ds  futr_year  futr_month  futr_day  futr_month_sin  futr_month_cos  futr_trend_linear  futr_is_holiday  futr_nth_wednesday_of_month  futr_freq2  futr_freq3  futr_freq10  futr_freq52  futr_freq100
+0  1994-10-05       1994          10         5   -8.660254e-01        0.500000                  0                0                            1           1           1            1            1             1
+1  1994-10-12       1994          10        12   -8.660254e-01        0.500000                  7                0                            2           2           2            2            2             2
+2  1994-10-19       1994          10        19   -8.660254e-01        0.500000                 14                0                            3           1           3            3            3             3
+3  1994-10-26       1994          10        26   -8.660254e-01        0.500000                 21                0                            4           2           1            4            4             4
+4  1994-11-02       1994          11         2   -5.000000e-01        0.866025                 28                0                            1           1           2            5            5             5
+5  1994-11-09       1994          11         9   -5.000000e-01        0.866025                 35                0                            2           2           3            6            6             6
+6  1994-11-16       1994          11        16   -5.000000e-01        0.866025                 42                0                            3           1           1            7            7             7
+7  1994-11-23       1994          11        23   -5.000000e-01        0.866025                 49                1                            4           2           2            8            8             8
+8  1994-11-30       1994          11        30   -5.000000e-01        0.866025                 56                0                            5           1           3            9            9             9
+9  1994-12-07       1994          12         7   -2.449294e-16        1.000000                 63                0                            1           2           1           10           10            10
+2026-01-11 08:31:06,134 - INFO - 
+============================================================
+2026-01-11 08:31:06,134 - INFO - 外生変数生成＆PostgreSQL格納 完了！
+2026-01-11 08:31:06,134 - INFO - ============================================================

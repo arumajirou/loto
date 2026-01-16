@@ -1,0 +1,86 @@
+# loto_hist_exog_config_example.yaml
+# 目的：hist_exog を“全部入り”で生成するサンプル
+# ※ heavy な機能は enabled=false を推奨（frequency/complexity/streaming など）
+
+runtime:
+  fillna_mode: keep   # keep|zero|ffill|median
+
+hist_exog:
+  lags:
+    enabled: true
+    values: [1, 2, 3, 7, 14, 28]
+    seasonal: [52]
+
+  diffs:
+    enabled: true
+    lags: [1, 7, 14, 28]
+
+  basic_stats:
+    enabled: true
+    windows: [7, 14, 28, 56]
+    funcs: ["mean", "std", "skew", "kurtosis", "min", "max", "quantile_0.25", "quantile_0.75"]
+
+  volatility:
+    enabled: true
+    windows: [7, 14, 28, 56]
+
+  smoothing:
+    enabled: true
+    spans: [5, 10, 20, 40]
+    macd: {fast: 12, slow: 26, signal: 9}
+
+  positioning:
+    enabled: true
+    windows: [7, 14, 28, 56]
+
+  trend:
+    enabled: true
+    windows: [7, 14, 28, 56]
+
+  autocorr:
+    enabled: true
+    windows: [28, 56]
+    lags: [1, 2, 3, 7, 14]
+    pacf: false
+    pacf_nlags: 14
+
+  shape:
+    enabled: true
+    windows: [14, 28, 56]
+
+  randomness:
+    enabled: true
+    windows: [28, 56]
+
+  complexity:
+    enabled: true
+    windows: [28, 56]
+    funcs:
+      - name: "perm_entropy"
+        params: {order: 3, normalize: true}
+      - name: "sample_entropy"
+      - name: "lziv_complexity"
+      - name: "hjorth_mobility"
+      - name: "hjorth_complexity"
+
+  frequency:
+    enabled: true
+    windows: [32, 64]
+    funcs: ["fft_centroid", "spectral_entropy"]
+    wavelet_energy: false
+
+  loto_domain:
+    enabled: true
+    decay: 0.95
+    parity_windows: [28, 56]
+
+  streaming:
+    enabled: true
+    input_name: "y"
+    models:
+      - name: "HalfSpaceTrees"
+        params: {n_trees: 10, height: 8, window_size: 100}
+    quantiles: [0.95]
+    clustering:
+      enabled: true
+      k: 4

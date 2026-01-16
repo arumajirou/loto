@@ -1,0 +1,159 @@
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+Time: 0.107 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+NOTICE:  relation "loto_base" already exists, skipping
+CREATE TABLE
+Time: 0.128 ms
+NOTICE:  relation "loto_hist" already exists, skipping
+CREATE TABLE
+Time: 0.051 ms
+NOTICE:  relation "idx_loto_base_loto_ds" already exists, skipping
+CREATE INDEX
+Time: 0.139 ms
+NOTICE:  relation "idx_loto_base_exec_ts" already exists, skipping
+CREATE INDEX
+Time: 0.045 ms
+NOTICE:  relation "idx_loto_hist_loto_ds" already exists, skipping
+CREATE INDEX
+Time: 0.077 ms
+NOTICE:  relation "idx_loto_hist_exec_ts" already exists, skipping
+CREATE INDEX
+Time: 0.024 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+COPY 75497
+Time: 148.107 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+COPY 75497
+Time: 198.012 ms
+[OK] saved to PostgreSQL
+  base: public.loto_base rows=75497
+  hist: public.loto_hist rows=75497
+  exec_ts=2025-12-14 19:17:29.591335 proc_seconds=1.638
+  tmp_dir=/tmp/loto_pg_ypi5yh30
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+Time: 0.231 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+NOTICE:  relation "loto_base" already exists, skipping
+CREATE TABLE
+Time: 0.132 ms
+NOTICE:  relation "loto_hist" already exists, skipping
+CREATE TABLE
+Time: 0.052 ms
+NOTICE:  relation "idx_loto_base_loto_ds" already exists, skipping
+CREATE INDEX
+Time: 0.138 ms
+NOTICE:  relation "idx_loto_base_exec_ts" already exists, skipping
+CREATE INDEX
+Time: 0.052 ms
+NOTICE:  relation "idx_loto_hist_loto_ds" already exists, skipping
+CREATE INDEX
+Time: 0.081 ms
+NOTICE:  relation "idx_loto_hist_exec_ts" already exists, skipping
+CREATE INDEX
+Time: 0.030 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+COPY 75497
+Time: 146.151 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+COPY 75497
+Time: 203.265 ms
+[OK] saved to PostgreSQL
+  base: public.loto_base rows=75497
+  hist: public.loto_hist rows=75497
+  exec_ts=2025-12-15 00:00:01.659364 proc_seconds=2.020
+  tmp_dir=/tmp/loto_pg_yxdmvf1t
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+NOTICE:  schema "public" already exists, skipping
+CREATE SCHEMA
+Time: 0.084 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+NOTICE:  relation "loto_base" already exists, skipping
+CREATE TABLE
+Time: 0.126 ms
+NOTICE:  relation "loto_hist" already exists, skipping
+CREATE TABLE
+Time: 0.051 ms
+NOTICE:  relation "idx_loto_base_loto_ds" already exists, skipping
+CREATE INDEX
+Time: 0.139 ms
+NOTICE:  relation "idx_loto_base_exec_ts" already exists, skipping
+CREATE INDEX
+Time: 0.045 ms
+NOTICE:  relation "idx_loto_hist_loto_ds" already exists, skipping
+CREATE INDEX
+Time: 0.078 ms
+NOTICE:  relation "idx_loto_hist_exec_ts" already exists, skipping
+CREATE INDEX
+Time: 0.024 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+COPY 75510
+Time: 142.612 ms
+Pager is used for long output.
+Line style is unicode.
+Border style is 2.
+Timing is on.
+Expanded display is used automatically.
+COPY 75510
+Time: 192.300 ms
+[OK] saved to PostgreSQL
+  base: public.loto_base rows=75510
+  hist: public.loto_hist rows=75510
+  exec_ts=2025-12-16 00:00:02.143681 proc_seconds=2.294
+  tmp_dir=/tmp/loto_pg_nv6aadeb
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
+bash: ./[200~#/bin/bash: そのようなファイルやディレクトリはありません
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
+/bin/bash: /mnt/e/env/ts/tslib/ds/bin/run_loto_etl.sh: そのようなファイルやディレクトリはありません
